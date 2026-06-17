@@ -1,0 +1,22 @@
+{
+  "schema": "ofbridge.techfixer.manifest/1",
+  "updated": "2026-06-17",
+  "_note": "Manifeste de TEST (repli local hors-ligne). En prod : heberger ce format sur GitHub raw et renseigner meta.manifestUrl dans tools.json.",
+  "tools": {
+    "diagnostic-expert": { "latest": "4.3.0", "dl": "https://example.invalid/dl/DiagnosticExpert_4.3.0.zip", "dlType": "zip" },
+    "winmedic":          { "latest": "2.2.0", "dl": "https://example.invalid/dl/WinMedic_2.2.0.zip", "dlType": "zip" },
+    "battery-monitor":   { "latest": "1.4.0", "dl": "https://example.invalid/dl/BatteryMonitor_1.4.0.zip", "dlType": "zip" },
+    "bluescreenview":    { "latest": "1.62", "dl": "https://www.nirsoft.net/utils/bluescreenview.zip", "dlType": "zip", "url": "https://www.nirsoft.net/utils/bluescreenview.html" },
+    "showkeyplus":       { "latest": "1.1.0", "url": "https://github.com/Superfly-Inc/ShowKeyPlus/releases" },
+    "hwinfo":            { "latest": "8.20", "url": "https://www.hwinfo.com/download/" },
+    "speccy":            { "latest": "1.32" },
+    "crystaldiskinfo":   { "latest": "9.5.0", "url": "https://crystalmark.info/en/software/crystaldiskinfo/" },
+    "hddscan":           { "latest": "4.0" },
+    "treesize":          { "latest": "4.7.3" },
+    "furmark":           { "latest": "2.5.0", "url": "https://geeks3d.com/furmark/" },
+    "3dpnet":            { "latest": "23.10" },
+    "internet-repair":   { "latest": "5.2.3" },
+    "revo":              { "latest": "5.4.0", "url": "https://www.revouninstaller.com/" },
+    "av-removal":        { "latest": "1.8.0" }
+  }
+}
