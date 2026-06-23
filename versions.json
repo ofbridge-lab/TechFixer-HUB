@@ -1,22 +1,146 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-06-17",
+  "updated": "2026-06-23",
   "_note": "Manifeste de TEST (repli local hors-ligne). En prod : heberger ce format sur GitHub raw et renseigner meta.manifestUrl dans tools.json.",
   "tools": {
-    "diagnostic-expert": { "latest": "4.3.0", "dl": "https://example.invalid/dl/DiagnosticExpert_4.3.0.zip", "dlType": "zip" },
-    "winmedic":          { "latest": "2.2.0", "dl": "https://example.invalid/dl/WinMedic_2.2.0.zip", "dlType": "zip" },
-    "battery-monitor":   { "latest": "1.4.0", "dl": "https://example.invalid/dl/BatteryMonitor_1.4.0.zip", "dlType": "zip" },
-    "bluescreenview":    { "latest": "1.62", "dl": "https://www.nirsoft.net/utils/bluescreenview.zip", "dlType": "zip", "url": "https://www.nirsoft.net/utils/bluescreenview.html" },
-    "showkeyplus":       { "latest": "1.1.0", "url": "https://github.com/Superfly-Inc/ShowKeyPlus/releases" },
-    "hwinfo":            { "latest": "8.20", "url": "https://www.hwinfo.com/download/" },
-    "speccy":            { "latest": "1.32" },
-    "crystaldiskinfo":   { "latest": "9.5.0", "url": "https://crystalmark.info/en/software/crystaldiskinfo/" },
-    "hddscan":           { "latest": "4.0" },
-    "treesize":          { "latest": "4.7.3" },
-    "furmark":           { "latest": "2.5.0", "url": "https://geeks3d.com/furmark/" },
-    "3dpnet":            { "latest": "23.10" },
-    "internet-repair":   { "latest": "5.2.3" },
-    "revo":              { "latest": "5.4.0", "url": "https://www.revouninstaller.com/" },
-    "av-removal":        { "latest": "1.8.0" }
+
+    /* === Ofbridge Suite === */
+ "CyclObs":
+	{ 
+		"latest": "4.3.0", 
+		"dl": "https://example.invalid/dl/DiagnosticExpert_4.3.0.zip", 
+		"dlType": "zip" 
+	},
+    
+"winmedic":         
+	{ 
+		"latest": "1.0.0", 
+		"dl": "https://github.com/ofbridge-lab/WinMedic/releases/download/V1.0.0/WinMedic.exe", 
+		"dlType": "zip" 
+	},
+    
+    /* === Informations sur le PC === */
+  
+"hwinfo":            
+	{ 
+		"latest": "8.48",
+		"url": "https://www.hwinfo.com/files/hwi_848.zip" 
+		"dlType": "zip" 
+	},
+	
+"battery-monitor":  
+	{ 
+		"latest": "1.4.0", 
+		"dl": "https://example.invalid/dl/BatteryMonitor_1.4.0.zip", 
+		"dlType": "zip" 
+	},
+	
+"showkeyplus":
+	{ 
+	"latest": "1.1.18.0"
+	"url": "https://github.com/Superfly-Inc/ShowKeyPlus/releases/download/ShowKeyPlus1.1.18.0/ShowKeyPlus1.1.18.0.x64.exe.zip"
+	"dlType": "zip"
+	},
+
+"bluescreenview":    
+	{ 
+	"latest": "1.55",
+	"dl": "https://www.nirsoft.net/utils/bluescreenview-x64.zip", 
+	"dlType": "zip", 
+	 },
+
+    /* === BBenchmark / Stress === */
+ "Userdiag":            
+	{ 
+		"latest": "26.6.4",
+		"url": "https://userdiag.com/download"
+		"dlType": "exe" 		
+	},   
+ "OCCT":            
+	{ 
+		"url": "https://www.ocbase.com/download/edition:Personal/os:Windows"
+		"dlType": "exe" 
+	}, 		
+  "FurMark2":           
+	{ 
+		"latest": "2.10.2",
+		"url": "https://geeks3d.com/dl/get/830"
+		"dlType": "zip",		
+	},
+
+ "RealBench":            
+	{ 
+		"latest": "2.43",
+		"url": "http://dlcdnmkt.asus.com/rog/RealBench_v2.43.zip"
+		"dlType": "zip" 		
+	},
+	
+ "FF XV bench":            
+	{ 
+		"latest": "1.3",
+		"url": "http://gdl.square-enix.com/ffxv/windows/benchmark/ffxvbench_installer.zip"
+		"dlType": "zip" 	
+	},
+
+    /* === Stockage === */
+"crystaldiskinfo":  
+	{ 
+		"latest": "9.9.1",
+		"url": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.1/CrystalDiskInfo9_9_1.zip/download"
+		"dlType": "zip" 		
+	},
+	
+"hddscan":          
+	{ 
+		"latest": "4.1"
+		"url":"https://hddscan.com/download.html"
+		"dlType": "zip" 		
+	},
+    
+"treesize":         
+	{ 
+		"latest": "4.7.3"
+		"url":"https://downloads.jam-software.de/treesize_free/TreeSizeFree-Portable.zip?language=EN"
+	},
+    /* === Réseaux === */
+	
+"internet-repair":   
+	{ 
+		"latest": "11.1.3.6518"
+		"dl": "https://rizonesoft.com/?gdm_process_download=1&download_id=18323", 
+		"dlType": "exe", 
+	},
+ 
+"3dpnet":  
+	{ 
+		"latest": "23.10" 
+		"dl":"https://www.3dpchip.com/new/3DP_Net_V2101.exe"
+	},	
+
+	
+	/* === désinstallation === */
+	
+"Display Driver Uninstaller (DDU)":              
+	{ 
+	"latest": "18.1.5.4 ", 
+	"url": "https://www.guru3d.com/download/display-driver-uninstaller-download/" 
+	"dlType": "zip",
+	},	
+
+"Revouninstaller":              
+	{ 
+	"latest": "2.7.0", 
+	"url": "https://www.revouninstaller.com/fr/start-freeware-download-portable/" 
+	},
+	
+ "Antivirus Removal Tool ":        
+	{ 
+	"latest": "2026.02"
+	"url": "https://antivirus-removal-tool.com/download/click.php?id=Antivirus_Removal_Tool"
+	"dlType": "zip",
+	},
+
+	}
+
   }
 }
