@@ -1,0 +1,40 @@
+name: Update manifest
+
+# Recalcule automatiquement versions.json (latest + dl) depuis les sources officielles,
+# puis committe si quelque chose a change. Aucune intervention manuelle.
+
+on:
+  schedule:
+    - cron: '17 6 * * *'      # tous les jours a 06:17 UTC
+  workflow_dispatch: {}        # + bouton "Run workflow" manuel
+
+permissions:
+  contents: write              # necessaire pour committer versions.json
+
+concurrency:
+  group: update-manifest
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resoudre les versions
+        id: resolve
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./scripts/Update-Manifest.ps1 -ManifestPath versions.json
+
+      - name: Committer si change
+        if: steps.resolve.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git config user.name  "techfixer-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versions.json
+          git commit -m "chore: auto-update manifest ($(date -u +%F))"
+          git push
