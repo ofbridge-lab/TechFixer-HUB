@@ -1,6 +1,6 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "_note": "Manifeste de TEST (repli local hors-ligne). En prod : heberger ce format sur GitHub raw et renseigner meta.manifestUrl dans tools.json.",
   "meta": {
     "categories": {
@@ -80,11 +80,9 @@
 
     "crystaldiskinfo": {
       "latest": "9.9.1",
-      "dl": "https://www.majorgeeks.com/mg/getmirror/crystaldiskinfo_portable,1.html",
-      "dlVia": "majorgeeks",
+      "dl": "https://github.com/ofbridge-lab/TechFixer-HUB/releases/download/mirrors/CrystalDiskInfo9_9_1.zip",
       "dlType": "zip",
-      "_note": "PORTABLE (zip) via MajorGeeks - l'entree 'crystaldiskinfo' donne l'installeur, 'crystaldiskinfo_portable' donne le zip. SourceForge bloque tout client .NET.",
-      "resolve": { "type": "majorgeeks", "detail": "https://www.majorgeeks.com/files/details/crystaldiskinfo_portable.html", "mirror": "https://www.majorgeeks.com/mg/getmirror/crystaldiskinfo_portable,1.html" }
+      "_note": "Mirror perso (release 'mirrors', zip portable). SourceForge bloque tout client .NET, la page MajorGeeks portable est en 404, et l'auto-download SourceForge ne marche pas en fenetre WebView2 invisible. Le hub le prend via le provision de tools.json (qui prime)."
     },
     "hddscan": {
       "latest": "4.1",
@@ -132,7 +130,6 @@
     "av-removal": {
       "latest": "2026.02",
       "url": "https://antivirus-removal-tool.com/download/click.php?id=Antivirus_Removal_Tool",
-      "dl": "https://antivirus-removal-tool.com/download/click.php?id=Antivirus_Removal_Tool",
       "dlType": "zip",
       "resolve": { "type": "redirect", "url": "https://antivirus-removal-tool.com/download/click.php?id=Antivirus_Removal_Tool", "versionRx": "_(\\d{4})_(\\d{2})" }
     }
