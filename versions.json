@@ -1,15 +1,40 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-07-22",
+  "updated": "2026-07-23",
   "_note": "Manifeste de TEST (repli local hors-ligne). En prod : heberger ce format sur GitHub raw et renseigner meta.manifestUrl dans tools.json.",
   "meta": {
     "categories": {
-      "ofbridge-suite": ["CyclObs", "winmedic", "battery-monitor"],
-      "info-pc": ["hwinfo", "showkeyplus", "bluescreenview"],
-      "benchmark-stress": ["Userdiag", "OCCT", "furmark", "RealBench", "ffxv"],
-      "stockage": ["crystaldiskinfo", "hddscan", "treesize"],
-      "reseaux": ["internet-repair", "3dpnet"],
-      "desinstallation": ["ddu", "revo", "av-removal"]
+      "ofbridge-suite": [
+        "CyclObs",
+        "winmedic",
+        "battery-monitor"
+      ],
+      "info-pc": [
+        "hwinfo",
+        "showkeyplus",
+        "bluescreenview"
+      ],
+      "benchmark-stress": [
+        "Userdiag",
+        "OCCT",
+        "furmark",
+        "RealBench",
+        "ffxv"
+      ],
+      "stockage": [
+        "crystaldiskinfo",
+        "hddscan",
+        "treesize"
+      ],
+      "reseaux": [
+        "internet-repair",
+        "3dpnet"
+      ],
+      "desinstallation": [
+        "ddu",
+        "revo",
+        "av-removal"
+      ]
     }
   },
   "tools": {
@@ -22,36 +47,57 @@
       "latest": "1.0.0",
       "dl": "https://github.com/ofbridge-lab/WinMedic/releases/download/V1.0.0/WinMedic.exe",
       "dlType": "exe",
-      "resolve": { "type": "github", "repo": "ofbridge-lab/WinMedic", "assetRx": "WinMedic\\.exe$" }
+      "resolve": {
+        "type": "github",
+        "repo": "ofbridge-lab/WinMedic",
+        "assetRx": "WinMedic\\.exe$"
+      },
+      "sha256": "77766057ae0af0c6a9937af555157e9804b09dd1597452edd4ad50a05506cf04"
     },
     "battery-monitor": {
       "latest": "2.0.0",
       "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/V2.0.0/Battery_Monitor.exe",
       "dlType": "exe",
-      "resolve": { "type": "github", "repo": "ofbridge-lab/Info_batterie", "assetRx": "\\.exe$" }
+      "resolve": {
+        "type": "github",
+        "repo": "ofbridge-lab/Info_batterie",
+        "assetRx": "\\.exe$"
+      },
+      "sha256": "d98c5eca3a6c4b20c2a0c086a78c31e9ead6ed7ba7d1f69636a17747d6355dcc"
     },
-
     "hwinfo": {
       "latest": "8.50",
       "dl": "https://www.majorgeeks.com/mg/getmirror/hwinfo32_portable,1.html",
       "dlVia": "majorgeeks",
       "dlType": "zip",
       "_note": "hwinfo.com renvoie 403 pour TOUT client .NET (HttpClient brut teste, meme sans navigateur) - blocage TLS/WAF structurel. MajorGeeks (CDN filesN.majorgeeks.com) est la SEULE voie qui evite ce domaine.",
-      "resolve": { "type": "majorgeeks", "detail": "https://www.majorgeeks.com/files/details/hwinfo32_portable.html", "mirror": "https://www.majorgeeks.com/mg/getmirror/hwinfo32_portable,1.html" }
+      "resolve": {
+        "type": "majorgeeks",
+        "detail": "https://www.majorgeeks.com/files/details/hwinfo32_portable.html",
+        "mirror": "https://www.majorgeeks.com/mg/getmirror/hwinfo32_portable,1.html"
+      }
     },
     "showkeyplus": {
       "latest": "1.1.18.0",
       "url": "https://github.com/Superfly-Inc/ShowKeyPlus/releases/download/ShowKeyPlus1.1.18.0/ShowKeyPlus1.1.18.0.x64.exe.zip",
       "dlType": "zip",
-      "resolve": { "type": "github", "repo": "Superfly-Inc/ShowKeyPlus", "assetRx": "x64\\.exe\\.zip$" }
+      "resolve": {
+        "type": "github",
+        "repo": "Superfly-Inc/ShowKeyPlus",
+        "assetRx": "x64\\.exe\\.zip$"
+      },
+      "dl": "https://github.com/Superfly-Inc/ShowKeyPlus/releases/download/ShowKeyPlus1.1.18.0/ShowKeyPlus1.1.18.0.x64.exe.zip"
     },
     "bluescreenview": {
       "latest": "1.55",
       "dl": "https://www.nirsoft.net/utils/bluescreenview-x64.zip",
       "dlType": "zip",
-      "resolve": { "type": "scrape", "url": "https://www.nirsoft.net/utils/blue_screen_view.html", "versionRx": "BlueScreenView v(\\d+\\.\\d+)" }
+      "resolve": {
+        "type": "scrape",
+        "url": "https://www.nirsoft.net/utils/blue_screen_view.html",
+        "versionRx": "BlueScreenView v(\\d+\\.\\d+)"
+      }
     },
-
     "Userdiag": {
       "latest": "26.6.4",
       "url": "https://userdiag.com/download",
@@ -65,7 +111,11 @@
       "latest": "2.10.2",
       "dl": "https://geeks3d.com/dl/get/830",
       "dlType": "zip",
-      "resolve": { "type": "redirect", "url": "https://geeks3d.com/dl/get/830", "versionRx": "FurMark_(\\d+\\.\\d+\\.\\d+)" }
+      "resolve": {
+        "type": "redirect",
+        "url": "https://geeks3d.com/dl/get/830",
+        "versionRx": "FurMark_(\\d+\\.\\d+\\.\\d+)"
+      }
     },
     "RealBench": {
       "latest": "2.43",
@@ -77,7 +127,6 @@
       "url": "http://gdl.square-enix.com/ffxv/windows/benchmark/ffxvbench_installer.zip",
       "dlType": "zip"
     },
-
     "crystaldiskinfo": {
       "latest": "9.9.1",
       "dl": "https://github.com/ofbridge-lab/TechFixer-HUB/releases/download/mirrors/CrystalDiskInfo9_9_1.zip",
@@ -89,23 +138,33 @@
       "url": "https://hddscan.com/download.html",
       "dl": "https://hddscan.com/download/HDDScan.zip",
       "dlType": "zip",
-      "resolve": { "type": "scrape", "url": "https://hddscan.com/", "versionRx": "Version\\s*(\\d+\\.\\d+)" }
+      "resolve": {
+        "type": "scrape",
+        "url": "https://hddscan.com/",
+        "versionRx": "Version\\s*(\\d+\\.\\d+)"
+      }
     },
     "treesize": {
       "latest": "4.8.1.610",
       "url": "https://downloads.jam-software.de/treesize_free/TreeSizeFree-Portable.zip?language=EN",
       "dl": "https://downloads.jam-software.de/treesize_free/TreeSizeFree-Portable.zip?language=EN",
       "dlType": "zip",
-      "resolve": { "type": "majorgeeks", "detail": "https://www.majorgeeks.com/files/details/treesize_free.html" }
+      "resolve": {
+        "type": "majorgeeks",
+        "detail": "https://www.majorgeeks.com/files/details/treesize_free.html"
+      }
     },
-
     "internet-repair": {
       "latest": "11.1.3.6508",
       "dl": "https://www.majorgeeks.com/mg/getmirror/complete_internet_repair_portable,1.html",
       "dlVia": "majorgeeks",
       "dlType": "zip",
       "_note": "PORTABLE (zip) via MajorGeeks/WebView2. Le lien direct rizonesoft donne un INSTALLEUR (_Setup.exe), pas le portable.",
-      "resolve": { "type": "majorgeeks", "detail": "https://www.majorgeeks.com/files/details/complete_internet_repair_portable.html", "mirror": "https://www.majorgeeks.com/mg/getmirror/complete_internet_repair_portable,1.html" }
+      "resolve": {
+        "type": "majorgeeks",
+        "detail": "https://www.majorgeeks.com/files/details/complete_internet_repair_portable.html",
+        "mirror": "https://www.majorgeeks.com/mg/getmirror/complete_internet_repair_portable,1.html"
+      }
     },
     "3dpnet": {
       "latest": "21.01",
@@ -113,25 +172,38 @@
       "dlType": "zip",
       "sha256": "9ac3adee566e3f5523e9c3e1f96f9f00b579c778a2269b8c64da337dab000bd1"
     },
-
     "ddu": {
       "latest": "18.1.5.6",
       "dl": "https://download.wagnardsoft.com/DDU/DDU%20v18.1.5.6.exe",
       "dlType": "exe",
-      "resolve": { "type": "template", "versionUrl": "https://www.wagnardsoft.com/content/Download-Display-Driver-Uninstaller-DDU-18156", "versionRx": "Display Driver Uninstaller \\(DDU\\)\\s*(\\d+\\.\\d+\\.\\d+\\.\\d+)", "urlTemplate": "https://download.wagnardsoft.com/DDU/DDU%20v{version}.exe" }
+      "resolve": {
+        "type": "template",
+        "versionUrl": "https://www.wagnardsoft.com/content/Download-Display-Driver-Uninstaller-DDU-18156",
+        "versionRx": "Display Driver Uninstaller \\(DDU\\)\\s*(\\d+\\.\\d+\\.\\d+\\.\\d+)",
+        "urlTemplate": "https://download.wagnardsoft.com/DDU/DDU%20v{version}.exe"
+      }
     },
     "revo": {
       "latest": "2.7.0",
       "url": "https://www.revouninstaller.com/fr/start-freeware-download-portable/",
       "dl": "https://revouninstaller.b-cdn.net/ruf270/RevoUninstaller_Portable.zip",
       "dlType": "zip",
-      "resolve": { "type": "scrape", "url": "https://www.revouninstaller.com/start-freeware-download-portable/", "versionRx": "ruf(\\d)(\\d)(\\d)", "linkRx": "https://revouninstaller\\.b-cdn\\.net/ruf\\d+/RevoUninstaller_Portable\\.zip" }
+      "resolve": {
+        "type": "scrape",
+        "url": "https://www.revouninstaller.com/start-freeware-download-portable/",
+        "versionRx": "ruf(\\d)(\\d)(\\d)",
+        "linkRx": "https://revouninstaller\\.b-cdn\\.net/ruf\\d+/RevoUninstaller_Portable\\.zip"
+      }
     },
     "av-removal": {
       "latest": "2026.02",
       "url": "https://antivirus-removal-tool.com/download/click.php?id=Antivirus_Removal_Tool",
       "dlType": "zip",
-      "resolve": { "type": "redirect", "url": "https://antivirus-removal-tool.com/download/click.php?id=Antivirus_Removal_Tool", "versionRx": "_(\\d{4})_(\\d{2})" }
+      "resolve": {
+        "type": "redirect",
+        "url": "https://antivirus-removal-tool.com/download/click.php?id=Antivirus_Removal_Tool",
+        "versionRx": "_(\\d{4})_(\\d{2})"
+      }
     }
   }
 }
