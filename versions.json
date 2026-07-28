@@ -1,6 +1,6 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-07-23",
+  "updated": "2026-07-28",
   "_note": "Manifeste de TEST (repli local hors-ligne). En prod : heberger ce format sur GitHub raw et renseigner meta.manifestUrl dans tools.json.",
   "meta": {
     "categories": {
@@ -55,15 +55,15 @@
       "sha256": "77766057ae0af0c6a9937af555157e9804b09dd1597452edd4ad50a05506cf04"
     },
     "battery-monitor": {
-      "latest": "2.0.0",
-      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/V2.0.0/Battery_Monitor.exe",
+      "latest": "2.1.001",
+      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/V2.1.001/Battery_Monitor.exe",
       "dlType": "exe",
       "resolve": {
         "type": "github",
         "repo": "ofbridge-lab/Info_batterie",
         "assetRx": "\\.exe$"
       },
-      "sha256": "d98c5eca3a6c4b20c2a0c086a78c31e9ead6ed7ba7d1f69636a17747d6355dcc"
+      "sha256": "9fc94889410fb15f02a898c59b51553eaf919cd42f0b44ef041754941e45684c"
     },
     "hwinfo": {
       "latest": "8.50",
