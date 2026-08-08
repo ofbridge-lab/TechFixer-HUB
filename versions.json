@@ -1,13 +1,14 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-07-31",
+  "updated": "2026-08-08",
   "_note": "Manifeste de TEST (repli local hors-ligne). En prod : heberger ce format sur GitHub raw et renseigner meta.manifestUrl dans tools.json.",
   "meta": {
     "categories": {
       "ofbridge-suite": [
         "CyclObs",
         "winmedic",
-        "battery-monitor"
+        "battery-monitor",
+        "techmis"
       ],
       "info-pc": [
         "hwinfo",
@@ -53,6 +54,16 @@
         "assetRx": "WinMedic\\.exe$"
       },
       "sha256": "77766057ae0af0c6a9937af555157e9804b09dd1597452edd4ad50a05506cf04"
+    },
+    "techmis": {
+      "latest": "1.0",
+      "dl": "https://github.com/ofbridge-lab/Techmis/releases/download/V1/Techmis.exe",
+      "dlType": "exe",
+      "resolve": {
+        "type": "github",
+        "repo": "ofbridge-lab/Techmis",
+        "assetRx": "\\.exe$"
+      }
     },
     "battery-monitor": {
       "latest": "2.1.001",
