@@ -1,7 +1,6 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-08-08",
- ,
+  "updated": "2026-09-29",
   "meta": {
     "categories": {
       "ofbridge-suite": [
