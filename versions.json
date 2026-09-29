@@ -44,39 +44,40 @@
       "dlType": "zip"
     },
     "winmedic": {
-      "latest": "1.0.0",
-      "dl": "https://github.com/ofbridge-lab/WinMedic/releases/download/V1.0.0/WinMedic.exe",
+      "latest": "1.2.1",
+      "dl": "https://github.com/ofbridge-lab/WinMedic/releases/download/V1.2.1/WinMedic.exe",
       "dlType": "exe",
       "resolve": {
         "type": "github",
         "repo": "ofbridge-lab/WinMedic",
         "assetRx": "WinMedic\\.exe$"
       },
-      "sha256": "77766057ae0af0c6a9937af555157e9804b09dd1597452edd4ad50a05506cf04"
+      "sha256": "d30e13286295ad40cda54ce0842082ad465ff179e9d63b60e40805718147a0bb"
     },
     "techmis": {
-      "latest": "1.0",
+      "latest": "1.0.0",
       "dl": "https://github.com/ofbridge-lab/Techmis/releases/download/V1/Techmis.exe",
       "dlType": "exe",
       "resolve": {
         "type": "github",
         "repo": "ofbridge-lab/Techmis",
         "assetRx": "\\.exe$"
-      }
+      },
+      "sha256": "658d86ca3498146e97fc456c5dc5b77ac63c3fd3ce0c8e94c68adb09af32cdfa"
     },
     "battery-monitor": {
-      "latest": "2.1.001",
-      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/V2.1.001/Battery_Monitor.exe",
+      "latest": "2.1.003",
+      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/V2.1.003/Battery_Monitor.exe",
       "dlType": "exe",
       "resolve": {
         "type": "github",
         "repo": "ofbridge-lab/Info_batterie",
         "assetRx": "\\.exe$"
       },
-      "sha256": "b884c3e5900007d58b361cb105f0767fe2dfda8af6d0380f59c1f837d78dfe88"
+      "sha256": "0f90daf8784948f46580d7edbb44de2c1f94ff0a8a4c7e7c8930250a1b9e8551"
     },
     "hwinfo": {
-      "latest": "8.50",
+      "latest": "8.52",
       "dl": "https://www.majorgeeks.com/mg/getmirror/hwinfo32_portable,1.html",
       "dlVia": "majorgeeks",
       "dlType": "zip",
