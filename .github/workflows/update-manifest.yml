@@ -29,6 +29,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./scripts/Update-Manifest.ps1 -ManifestPath versions.json
 
+      - name: Valider avant commit
+        if: steps.resolve.outputs.changed == 'true'
+        shell: pwsh
+        run: ./scripts/Test-Manifest.ps1 -ManifestPath versions.json
+
       - name: Committer si change
         if: steps.resolve.outputs.changed == 'true'
         shell: bash
