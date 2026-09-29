@@ -1,0 +1,30 @@
+name: Validate manifest
+
+# Vérifie versions.json à chaque modification (push ou pull request).
+# Une erreur fait échouer le contrôle (croix rouge sur le commit) et affiche
+# le problème directement sur versions.json dans l'onglet Actions.
+
+on:
+  push:
+    paths:
+      - 'versions.json'
+      - 'scripts/Test-Manifest.ps1'
+      - '.github/workflows/validate-manifest.yml'
+  pull_request:
+    paths:
+      - 'versions.json'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Valider versions.json
+        shell: pwsh
+        run: ./scripts/Test-Manifest.ps1 -ManifestPath versions.json
