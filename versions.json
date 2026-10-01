@@ -1,6 +1,6 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-09-29",
+  "updated": "2026-10-01",
   "meta": {
     "categories": {
       "ofbridge-suite": [
@@ -77,7 +77,7 @@
       "sha256": "0f90daf8784948f46580d7edbb44de2c1f94ff0a8a4c7e7c8930250a1b9e8551"
     },
     "hwinfo": {
-      "latest": "8.52",
+      "latest": "8.54",
       "dl": "https://www.majorgeeks.com/mg/getmirror/hwinfo32_portable,1.html",
       "dlVia": "majorgeeks",
       "dlType": "zip",
