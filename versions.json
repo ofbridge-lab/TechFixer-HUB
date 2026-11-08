@@ -190,12 +190,12 @@
       "sha256": "9ac3adee566e3f5523e9c3e1f96f9f00b579c778a2269b8c64da337dab000bd1"
     },
     "ddu": {
-      "latest": "18.1.5.6",
-      "dl": "https://download.wagnardsoft.com/DDU/DDU%20v18.1.5.6.exe",
+      "latest": "18.1.6.2",
+      "dl": "https://download.wagnardsoft.com/DDU/DDU%20v18.1.6.2.exe",
       "dlType": "exe",
       "resolve": {
         "type": "template",
-        "versionUrl": "https://www.wagnardsoft.com/content/Download-Display-Driver-Uninstaller-DDU-18156",
+        "versionUrl": "https://www.majorgeeks.com/files/details/display_driver_uninstaller.html",
         "versionRx": "Display Driver Uninstaller \\(DDU\\)\\s*(\\d+\\.\\d+\\.\\d+\\.\\d+)",
         "urlTemplate": "https://download.wagnardsoft.com/DDU/DDU%20v{version}.exe"
       }
