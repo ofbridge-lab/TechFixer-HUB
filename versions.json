@@ -1,6 +1,6 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-11-10",
+  "updated": "2026-11-15",
   "meta": {
     "categories": {
       "ofbridge-suite": [
@@ -139,7 +139,7 @@
       "dlType": "zip"
     },
     "crystaldiskinfo": {
-      "latest": "9.9.4",
+      "latest": "9.9.5",
       "dl": "https://www.majorgeeks.com/mg/getmirror/crystaldiskinfo_portable,1.html",
       "dlVia": "majorgeeks",
       "dlType": "zip",
