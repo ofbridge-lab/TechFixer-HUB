@@ -119,13 +119,14 @@
       "dlType": "exe"
     },
     "furmark": {
-      "latest": "2.10.2",
-      "dl": "https://geeks3d.com/dl/get/830",
+      "latest": "2.11.0.4",
+      "dl": "https://www.majorgeeks.com/mg/getmirror/furmark_2,1.html",
+      "dlVia": "majorgeeks",
       "dlType": "zip",
       "resolve": {
-        "type": "redirect",
-        "url": "https://geeks3d.com/dl/get/830",
-        "versionRx": "FurMark_(\\d+\\.\\d+\\.\\d+)"
+        "type": "majorgeeks",
+        "detail": "https://www.majorgeeks.com/files/details/furmark_2.html",
+        "mirror": "https://www.majorgeeks.com/mg/getmirror/furmark_2,1.html"
       }
     },
     "RealBench": {
