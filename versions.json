@@ -66,15 +66,15 @@
       "sha256": "40baec8a7d6b5d35c8045e0eda50afae09811c9a86563f6e8a403c1cb2888eb5"
     },
     "battery-monitor": {
-      "latest": "2.1.003",
-      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/V2.1.003/Battery_Monitor.exe",
+      "latest": "2.3.003",
+      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/v2.3.003/Battery_Monitor.exe",
       "dlType": "exe",
       "resolve": {
         "type": "github",
         "repo": "ofbridge-lab/Info_batterie",
         "assetRx": "\\.exe$"
       },
-      "sha256": "0f90daf8784948f46580d7edbb44de2c1f94ff0a8a4c7e7c8930250a1b9e8551"
+      "sha256": "c6538512ad59ac399a525a68b2e4a4d24dd617af0d17dc096806c891a812aee2"
     },
     "hwinfo": {
       "latest": "8.60",
