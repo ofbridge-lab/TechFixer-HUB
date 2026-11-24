@@ -224,5 +224,11 @@
         "versionRx": "_(\\d{4})_(\\d{2})"
       }
     }
+  },
+  "_hub": {
+    "latest": "1.2.0",
+    "dl": "https://github.com/ofbridge-lab/TechFixer-HUB/releases/download/V1.2.0/TechFixHUB.exe",
+    "sha256": "09a59e03e1743d9ba04f74a8adbdfc0b556f6a121ffd39f0f5a68a6e3bf97748",
+    "notes": "Verif auto-update du hub visible, icones Ofbridge, apps au premier plan, plus de dialogue telechargements multiples, DDU 18.1.6.2 + FurMark 2.11.0.4, Techmis, version dynamique, systeme de release."
   }
 }
