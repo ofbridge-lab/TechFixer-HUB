@@ -1,6 +1,6 @@
 {
   "schema": "ofbridge.techfixer.manifest/1",
-  "updated": "2026-11-15",
+  "updated": "2026-11-24",
   "meta": {
     "categories": {
       "ofbridge-suite": [
@@ -55,15 +55,15 @@
       "sha256": "d30e13286295ad40cda54ce0842082ad465ff179e9d63b60e40805718147a0bb"
     },
     "techmis": {
-      "latest": "1.0.0",
-      "dl": "https://github.com/ofbridge-lab/Techmis/releases/download/V1/Techmis.exe",
+      "latest": "1.1.0",
+      "dl": "https://github.com/ofbridge-lab/Techmis/releases/download/V1.1.0/Techmis.exe",
       "dlType": "exe",
       "resolve": {
         "type": "github",
         "repo": "ofbridge-lab/Techmis",
         "assetRx": "\\.exe$"
       },
-      "sha256": "658d86ca3498146e97fc456c5dc5b77ac63c3fd3ce0c8e94c68adb09af32cdfa"
+      "sha256": "40baec8a7d6b5d35c8045e0eda50afae09811c9a86563f6e8a403c1cb2888eb5"
     },
     "battery-monitor": {
       "latest": "2.1.003",
