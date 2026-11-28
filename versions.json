@@ -39,8 +39,8 @@
   },
   "tools": {
     "CyclObs": {
-      "dlType": "zip",
-      "_note": "Bundle Ofbridge (pas de source hub) -> aucune MAJ via le hub."
+      "url": "https://github.com/ofbridge-lab",
+      "_note": "Bundle Ofbridge : MAJ manuelle avec la cle (pas de latest => pas de MAJ hub)."
     },
     "winmedic": {
       "latest": "1.2.1",
@@ -65,15 +65,15 @@
       "sha256": "40baec8a7d6b5d35c8045e0eda50afae09811c9a86563f6e8a403c1cb2888eb5"
     },
     "battery-monitor": {
-      "latest": "2.3.003",
-      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/v2.3.003/Battery_Monitor.exe",
+      "latest": "2.7.0",
+      "dl": "https://github.com/ofbridge-lab/Info_batterie/releases/download/V2.7.0/Battery_Monitor.exe",
       "dlType": "exe",
       "resolve": {
         "type": "github",
         "repo": "ofbridge-lab/Info_batterie",
         "assetRx": "\\.exe$"
       },
-      "sha256": "c6538512ad59ac399a525a68b2e4a4d24dd617af0d17dc096806c891a812aee2"
+      "sha256": "ba620f8fc7cebc46827ca42243abdbfe18e436ce7b6deceec07c6f0aed80e6cc"
     },
     "hwinfo": {
       "latest": "8.60",
